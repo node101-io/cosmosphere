@@ -57,8 +57,8 @@ input[type=number] {
 
   --main-color: rgba(231, 4, 99, 1);
   --background-color: rgba(14, 14, 14, 1);
-  --text-color: rgba(217, 217, 217, 1);
-  --text-color-two: rgba(244, 244, 244, 1);
+  --text-color: rgba(244, 244, 244, 1);
+  --text-color-two: rgba(217, 217, 217, 1);
 }
 
 .display-none {

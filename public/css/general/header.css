@@ -25,11 +25,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--page-horizontal-padding);
+  z-index: 100;
+  backdrop-filter: blur(20px);
 }
 
 .all-header-logo-wrapper {
