@@ -4,7 +4,7 @@
   --all-header-button-gap: 60px;
   --all-header-get-tickets-button-icon-wrapper-size: 36px;
   --all-header-get-tickets-button-icon-wrapper-margin: 15px;
-  --all-header-get-tickets-button-icon-height: 18px;
+  --all-header-get-tickets-button-icon-width: 12px;
 }
 
 .all-wrapper {
@@ -74,31 +74,57 @@
   min-width: fit-content;
   display: flex;
   align-items: center;
+  position: relative;
   cursor: pointer;
+}
+.all-header-get-tickets-button:hover>.all-header-get-tickets-button-icon-wrapper {
+  width: 180%;
+  min-width: 180%;
+}
+.all-header-get-tickets-button:hover>.all-header-get-tickets-button-icon-wrapper>.all-header-get-tickets-button-icon {
+  left: calc((var(--all-header-get-tickets-button-icon-wrapper-size) - var(--all-header-get-tickets-button-icon-width)) / 2 + 10px);
+}
+.all-header-get-tickets-button:hover>.all-header-get-tickets-button-icon-wrapper>.all-header-get-tickets-button-icon>.all-header-get-tickets-button-icon-line {
+  opacity: 1;
+}
+.all-header-get-tickets-button:hover>.all-header-get-tickets-button-text {
+  color: var(--background-color);
 }
 .all-header-get-tickets-button-icon-wrapper {
   height: var(--all-header-get-tickets-button-icon-wrapper-size);
   min-height: var(--all-header-get-tickets-button-icon-wrapper-size);
   width: var(--all-header-get-tickets-button-icon-wrapper-size);
   min-width: var(--all-header-get-tickets-button-icon-wrapper-size);
-  border-radius: 100%;
+  border-radius: calc(var(--all-header-get-tickets-button-icon-wrapper-size) / 2);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: calc(-1 * (var(--all-header-get-tickets-button-icon-wrapper-margin) + var(--all-header-get-tickets-button-icon-wrapper-size)));
   background-color: var(--main-color);
-  margin-right: var(--all-header-get-tickets-button-icon-wrapper-margin);
+  transition: none 0.4s ease-in-out;
+  transition-property: width, min-width;
 }
 .all-header-get-tickets-button-icon {
-  height: var(--all-header-get-tickets-button-icon-height);
-  min-height: var(--all-header-get-tickets-button-icon-height);
-  width: auto;
-  min-width: auto;
+  width: var(--all-header-get-tickets-button-icon-width);
+  min-width: var(--all-header-get-tickets-button-icon-width);
+  height: auto;
+  min-height: auto;
+  position: absolute;
+  left: calc((var(--all-header-get-tickets-button-icon-wrapper-size) - var(--all-header-get-tickets-button-icon-width)) / 2);
   fill: var(--background-color);
+  transition: all 0.4s ease-in-out;
+}
+.all-header-get-tickets-button-icon-line {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
 .all-header-get-tickets-button-text {
   font-weight: 500;
   font-size: 18px;
   color: var(--main-color);
+  transition: all 0.2s ease-in-out;
+  z-index: 101;
 }
 
 .all-content {
