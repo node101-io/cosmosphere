@@ -21,6 +21,7 @@
   --page-three-speakers-grid-gap: 32px;
   --page-three-speaker-width: 280px;
   --page-three-speaker-height: calc(var(--page-three-speaker-width) * 1.1);
+  --page-three-schedule-right-events-wrapper-height: 50vh;
   --page-three-schedule-right-events-wrapper-gap: 36px;
   --page-three-schedule-right-each-event-gap: 40px;
   --page-three-schedule-right-each-event-time-width: 140px;
@@ -557,8 +558,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 600px;
-  min-width: 600px;
+  width: 640px;
+  min-width: 640px;
   height: 100%;
   min-height: 100%;
 }
@@ -566,10 +567,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--page-three-schedule-right-events-wrapper-gap);
-  height: 50vh;
-  min-height: 50vh;
+  height: var(--page-three-schedule-right-events-wrapper-height);
+  min-height: var(--page-three-schedule-right-events-wrapper-height);
   margin-top: auto;
-  /* margin-right:  */
+  padding-right: 60px; 
   overflow-y: scroll;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
