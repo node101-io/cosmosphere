@@ -490,6 +490,8 @@
 }
 .page-three-speakers-wrapper {
   display: flex;
+  width: 100%;
+  min-width: 100%;
   flex-direction: column;
   gap: 40px;
   align-items: center;
@@ -1032,16 +1034,32 @@
   .page-three-schedule-wrapper {
     flex-wrap: wrap;
   }
+  .page-three-speakers-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .page-three-speakers-grid-wrapper {
     grid-template-columns: repeat(12, 1fr);
-    width: calc(100vw - 3 * var(--page-horizontal-padding));
-    min-width: calc(100vw - 3 * var(--page-horizontal-padding));
+    padding-left: var(--page-horizontal-padding);
+    padding-right: var(--page-horizontal-padding);
+    width: 100%;
+    max-width: 100%;
     overflow-x: scroll;
+  }
+  .page-three-speakers-grid-wrapper::-webkit-scrollbar {
+    display: none;
   }
   .page-three-each-sponsors-list-wrapper {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    width: calc(100vw - 3 * var(--page-horizontal-padding));
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+    left: calc(50% - 50vw);
+    padding: 0 calc(var(--page-horizontal-padding) * 2);
+  }
+  .page-three-each-sponsors-list-wrapper::-webkit-scrollbar {
+    display: none;
   }
 }
 @media only screen and (max-width: 1000px) {
