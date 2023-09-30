@@ -282,7 +282,7 @@
   min-width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   padding: var(--all-header-height) var(--page-horizontal-padding);
   padding-bottom: 0;
   z-index: 6;
@@ -342,6 +342,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: var(--page-two-content-spacing);
 }
 
@@ -385,7 +387,7 @@
 }
 .page-two-cosmosphere-text {
   font-weight: 400;
-  font-size: 58px;
+  font-size: 56px;
   color: var(--main-color);
 }
 
@@ -861,66 +863,6 @@
 #location-slider-arrow-right {
   right: var(--page-horizontal-padding);
 }
-/* 
-.page-three-location-button {
-  height: fit-content;
-  min-height: fit-content;
-  width: fit-content;
-  min-width: fit-content;
-  display: flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-.page-three-location-button:hover>.page-three-location-button-icon-wrapper {
-  width: 180%;
-  min-width: 180%;
-}
-.page-three-location-button:hover>.page-three-location-button-icon-wrapper>.page-three-location-button-icon {
-  left: calc((var(--page-three-location-button-icon-wrapper-size) - var(--page-three-location-button-icon-width)) / 2 + 10px);
-}
-.page-three-location-button:hover>.page-three-location-button-icon-wrapper>.page-three-location-button-icon>.page-three-location-button-icon-line {
-  opacity: 1;
-}
-.page-three-location-button:hover>.page-three-location-button-text {
-  color: var(--background-color);
-}
-.page-three-location-button-icon-wrapper {
-  height: var(--page-three-location-button-icon-wrapper-size);
-  min-height: var(--page-three-location-button-icon-wrapper-size);
-  width: var(--page-three-location-button-icon-wrapper-size);
-  min-width: var(--page-three-location-button-icon-wrapper-size);
-  border-radius: calc(var(--page-three-location-button-icon-wrapper-size) / 2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: calc(-1 * (var(--page-three-location-button-icon-wrapper-margin) + var(--page-three-location-button-icon-wrapper-size)));
-  background-color: var(--main-color);
-  transition: none 0.4s ease-in-out;
-  transition-property: width, min-width;
-}
-.page-three-location-button-icon {
-  width: var(--page-three-location-button-icon-width);
-  min-width: var(--page-three-location-button-icon-width);
-  height: auto;
-  min-height: auto;
-  position: absolute;
-  left: calc((var(--page-three-location-button-icon-wrapper-size) - var(--page-three-location-button-icon-width)) / 2);
-  fill: var(--background-color);
-  transition: all 0.4s ease-in-out;
-}
-.page-three-location-button-icon-line {
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-}
-.page-three-location-button-text {
-  font-weight: 500;
-  font-size: 18px;
-  color: var(--main-color);
-  transition: all 0.2s ease-in-out;
-  z-index: 101;
-} */
 
 .page-three-footer-wrapper {
   display: flex;
@@ -1070,6 +1012,9 @@
 @media only screen and (max-width: 1400px) {
   :root {
     --page-one-title-letter-spacing: 22px;
+
+    --page-two-left-width: 400px;
+    --page-two-right-cosmosphere-wrapper-width: 400px;
   }
 
   .page-one-title-date {
@@ -1080,6 +1025,16 @@
   }
   .page-one-subtitle {
     font-size: 28px;
+  }
+
+  .page-two-left-each-title {
+    font-size: 36px;
+  }
+  .page-two-cosmosphere-text {
+    font-size: 52px;
+  }
+  .page-two-cosmoverse-text, .page-two-earth-text {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -1093,6 +1048,8 @@
 
     --page-one-background-image-width: 1400px;
     --page-one-title-letter-spacing: 20px;
+
+    --page-two-right-cosmosphere-wrapper-width: 340px;
   }
 
   .page-one-title-date {
@@ -1103,6 +1060,16 @@
   }
   .page-one-subtitle {
     font-size: 24px;
+  }
+
+  .page-two-left-each-title {
+    font-size: 32px;
+  }
+  .page-two-cosmosphere-text {
+    font-size: 44px;
+  }
+  .page-two-cosmoverse-text, .page-two-earth-text {
+    font-size: 34px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -1131,6 +1098,12 @@
     --page-one-background-image-width: 1200px;
     --page-one-title-letter-spacing: 20px;
     --page-one-footer-supported-by-logo-width: 110px;
+
+    --page-two-left-width: 360px;
+    --page-two-right-earth-width: 460px;
+    --page-two-right-cosmosphere-wrapper-width: 300px;
+    --page-two-right-cosmosphere-wrapper-height: 100px;
+    --page-two-right-content-inner-width: 360px;
   }
   
   .page-one-title-date {
@@ -1144,6 +1117,45 @@
   }
   .page-one-footer-supported-by-text {
     font-size: 14px;
+  }
+
+  .page-two-cosmoverse-text, .page-two-earth-text {
+    font-size: 28px;
+  }
+  .page-two-cosmosphere-text {
+    font-size: 36px;
+  }
+  .page-two-each-cosmosphere-question {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  :root {
+    --page-two-left-width: 100%;
+    --page-two-left-content-spacing: 40px;
+    --page-two-right-cosmosphere-wrapper-height: 80px;
+    --page-two-right-cosmosphere-margin: 20px;
+    --page-two-content-spacing: 0;
+  }
+
+  .page-two-inner-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .page-two-left-each-subtitle {
+    font-size: 18px;
+  }
+  .page-two-left-each-title {
+    font-size: 28px;
+  }
+  .page-two-left-each-text {
+    font-size: 14px;
+  }
+  .page-two-each-cosmosphere-question {
+    color: var(--text-color-three);
+  }
+  .page-two-each-cosmosphere-question:nth-child(5) {
+    display: none;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -1163,6 +1175,10 @@
   }
   .page-one-subtitle {
     font-size: 20px;
+  }
+
+  .page-two-left-each-subtitle {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1204,6 +1220,10 @@
   :root {
     --page-one-title-letter-spacing: 12px;
     --page-one-footer-supported-by-logo-width: 90px;
+
+    --page-two-right-cosmosphere-wrapper-width: 220px;
+    --page-two-right-content-inner-width: 300px;
+    --page-two-right-earth-width: 400px;
   }
   
   .page-one-title {
@@ -1221,6 +1241,11 @@
     --page-one-background-image-width: 600px;
     --page-one-title-letter-spacing: 6px;
 
+    --page-two-left-content-spacing: 20px;
+    --page-two-right-content-inner-width: 240px;
+    --page-two-right-cosmosphere-wrapper-width: 150px;
+    --page-two-right-earth-width: 300px;
+
     --page-three-schedule-right-each-event-time-width: 50px;
   }
   
@@ -1230,5 +1255,12 @@
 
   .page-one-title {
     font-size: 34px;
+  }
+
+  .page-two-left-each-title {
+    font-size: 22px;
+  }
+  .page-two-each-cosmosphere-question {
+    font-size: 14px;
   }
 }
