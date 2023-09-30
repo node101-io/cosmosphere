@@ -1082,8 +1082,15 @@
     font-size: 28px;
   }
 }
+@media only screen and (max-width: 1300px) {
+  :root {
+    --page-three-speaker-width: 250px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   :root {
+    --page-three-speaker-width: 230px;
+
     --page-one-background-image-width: 1400px;
     --page-one-title-letter-spacing: 20px;
   }
@@ -1102,9 +1109,21 @@
   :root {
     --page-three-schedule-left-wrapper-height: fit-content;
     --page-three-schedule-right-wrapper-height: fit-content;
+    --page-three-speaker-width: 200px;
   }
   .page-three-schedule-wrapper {
     flex-wrap: wrap;
+  }
+  .page-three-speakers-grid-wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    width: calc(100vw - 4 * var(--page-horizontal-padding));
+    min-width: calc(100vw - 4 * var(--page-horizontal-padding));
+    overflow-x: scroll;
+  }
+  .page-three-each-sponsors-list-wrapper {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: calc(100vw - 4 * var(--page-horizontal-padding));
   }
 }
 @media only screen and (max-width: 1000px) {
