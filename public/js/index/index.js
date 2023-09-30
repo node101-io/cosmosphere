@@ -34,17 +34,5 @@ window.addEventListener('load', () => {
         });
       };
     };
-
-    if (e.target.closest('#footer-speakers-button') || e.target.closest('#header-speakers-button')) {
-      document.querySelector('.page-three-speakers-wrapper').scrollIntoView({ behavior: 'smooth' });
-    };
-
-    if (e.target.closest('#footer-sponsors-button') || e.target.closest('#header-sponsors-button')) {
-      document.querySelector('.page-three-sponsors-wrapper').scrollIntoView({ behavior: 'smooth' });
-    };
-
-    if (e.target.closest('#footer-schedule-button') || e.target.closest('#header-schedule-button')) {
-      document.querySelector('.page-three-schedule-wrapper').scrollIntoView({ behavior: 'smooth' });
-    };
   });
 });
