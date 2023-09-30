@@ -85,49 +85,97 @@ const speakers = [
     linkedin: 'https://www.linkedin.com/in/deantribble/',
     x: 'https://twitter.com/DeanTribble',
   },
+  {
+    name: 'Sunny Aggarwal',
+    title: 'Q&A Session',
+    title_secondary: 'Co-Founder, Osmosis Labs',
+    image: '/img/speakers/sunny.png',
+    company_image: '/img/partners/companies/osmosis.png',
+    company_image_width: '28%',
+    linkedin: 'https://www.linkedin.com/in/sunnya97/',
+    x: 'https://twitter.com/sunnya97',
+  },
+  {
+    name: '0xBrainjar',
+    title: 'Founder of Composable Finance',
+    image: '/img/speakers/0xbrainjar.png',
+    company_image: '/img/partners/companies/composable.png',
+    company_image_width: '28%',
+    linkedin: 'https://www.linkedin.com/company/composable-finance/',
+    x: 'https://twitter.com/0xbrainjar',
+  },
+  {
+    name: 'Rebel Defi',
+    title: 'Head of Comms',
+    image: '/img/speakers/rebel.png',
+    company_image: '/img/partners/companies/tfm.png',
+    company_image_width: '28%',
+    linkedin: 'https://t.co/7USCuPA3l2',
+    x: 'https://twitter.com/rebel_defi',
+  }
 ];
 
 const schedule = [
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Registration & Coffee',
-    description: 'Register your personal data in customer service and take coffee before entering the room.',
+    time: '13:10 - 13:30',
+    title: 'Ethan Buchman, Informal Systems',
+    description: 'What is Cosmos and the AppChain Thesis?'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Todd Norton, Manta Network',
-    description: '“SNARKs, ZKPs, and Other Things The NSA Doesn’t Want You to Know About”',
+    time: '13:30 - 13:50',
+    title: 'Marko Baricevic, Binary Builders',
+    description: 'Cosmos SDK: Past, Present and Future!'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Luke Pearson, Polychain Capital',
-    description: '”Tips and Tricks: Finding Your Way Around a ZK Universe”',
+    time: '13:50 - 14:10',
+    title: 'Mary McGilvray, Interchain Foundation',
+    description: 'What is IBC?'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Coffee Break',
-    description: '',
+    time: '14:10 - 14:30',
+    title: 'Misang Ryu, Confio',
+    description: 'Discovering CosmWasm: Your Entry to Smart Contracts in Cosmos'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Research For The Right Thing',
-    description: 'Research encompasses a cariety of investigative methods used to add context and insight to the design process.',
+    time: '14:30 - 14:50',
+    title: 'Dean Tribble, Agoric',
+    description: 'General Purpose of JavaScript dApps'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Luke Pearson, Polychain Capital',
-    description: '”Tips and Tricks: Finding Your Way Around a ZK Universe”',
+    time: '14:50 - 15:10',
+    title: 'Jack Zampolin, Strangelove',
+    description: 'UX Problems? How can we make Blockchain more user friendly with IBC?'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Coffee Break',
-    description: '',
+    time: '15:10 - 15:30',
+    title: 'Charles d\'Haussy, dYdX Foundation',
+    description: 'Astropolis: A Vision for Decentralized Financial Systems'
   },
   {
-    time: '8:00 AM - 9:00 AM',
-    title: 'Research For The Right Thing',
-    description: 'Research encompasses a cariety of investigative methods used to add context and insight to the design process.',
+    time: '15:30 - 15:50',
+    title: '0xBrainjar, Composable Finance',
+    description: 'Composable: User Intentions in the Digital World'
   },
+  {
+    time: '15:50 - 16:10',
+    title: 'Zaki Manian, Sommelier',
+    description: 'Liquid Staking in Cosmos'
+  },
+  {
+    time: '16:10 - 16:30',
+    title: 'Billyana Christova, Nolus Protocol',
+    description: 'Nolus: From TradFi DeFi Utilizing the Cosmos Stack'
+  },
+  {
+    time: '16:30 - 16:50',
+    title: 'Sunny Aggarwal, Osmosis',
+    description: 'Q&A with Sunny'
+  },
+  {
+    time: '16:50 - 17:10',
+    title: 'Rebel Defi, TFM',
+    description: 'The Interchain Swiss Army Knife'
+  }
 ];
 
 const sponsors = {
