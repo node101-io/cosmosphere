@@ -1071,10 +1071,18 @@
   :root {
     --page-three-schedule-left-wrapper-height: fit-content;
     --page-three-schedule-right-wrapper-height: fit-content;
+    --page-three-speaker-width: 200px;
   }
   .page-three-schedule-wrapper {
     flex-wrap: wrap;
   }
+  .page-three-speakers-grid-wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    min-width: 100vw;
+    overflow-x: scroll;
+  }
+
 }
 @media only screen and (max-width: 800px) {
   :root {
