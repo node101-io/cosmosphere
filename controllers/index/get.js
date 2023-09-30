@@ -100,7 +100,7 @@ const speakers = [
     title: 'Founder of Composable Finance',
     image: '/img/speakers/0xbrainjar.png',
     company_image: '/img/partners/companies/composable.png',
-    company_image_width: '28%',
+    company_image_width: '36%',
     linkedin: 'https://www.linkedin.com/company/composable-finance/',
     x: 'https://twitter.com/0xbrainjar',
   },
@@ -345,7 +345,7 @@ module.exports = (req, res) => {
     includes: {
       external: {
         css: ['general', 'header', 'page'],
-        js: ['ancestorWithClassName', 'page', 'serverRequest']
+        js: ['ancestorWithClassName', 'header','page', 'serverRequest']
       },
       meta: {
         title: 'Expanding the Cosmoverse',
