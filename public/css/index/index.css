@@ -1082,26 +1082,33 @@
     --page-three-schedule-left-wrapper-height: fit-content;
     --page-three-schedule-right-wrapper-height: fit-content;
     --page-three-speaker-width: 200px;
+
+    --page-three-location-slider-wrapper-height: 300px;
   }
   .page-three-schedule-wrapper {
     flex-wrap: wrap;
   }
   .page-three-speakers-grid-wrapper {
     grid-template-columns: repeat(12, 1fr);
-    width: calc(100vw - 4 * var(--page-horizontal-padding));
-    min-width: calc(100vw - 4 * var(--page-horizontal-padding));
+    width: calc(100vw - 3 * var(--page-horizontal-padding));
+    min-width: calc(100vw - 3 * var(--page-horizontal-padding));
     overflow-x: scroll;
   }
   .page-three-each-sponsors-list-wrapper {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    width: calc(100vw - 4 * var(--page-horizontal-padding));
+    width: calc(100vw - 3 * var(--page-horizontal-padding));
   }
 }
 @media only screen and (max-width: 800px) {
   :root {
     --page-three-schedule-right-wrapper-width: 100%;
     --page-three-schedule-right-each-event-time-width: 100px;
+
+    --page-three-location-slider-wrapper-height: 250px;
+  }
+  .page-thee-each-slider-arrow {
+    opacity: 0;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1110,6 +1117,10 @@
     --page-three-schedule-right-each-event-time-width: 80px;
     --page-three-schedule-right-events-wrapper-gap: 28px;
     --page-three-schedule-right-events-wrapper-padding: 20px;
+
+    --page-three-location-slider-wrapper-gap: 30px;
+    --page-three-location-slider-wrapper-height: 200px;
+
   }
   .page-three-schedule-right-wrapper {
     border-radius: 4px;
@@ -1123,5 +1134,10 @@
 @media only screen and (max-width: 400px) {
   :root {
     --page-three-schedule-right-each-event-time-width: 50px;
+
+    --page-three-location-slider-wrapper-gap: 20px;
+    --page-three-location-slider-wrapper-height: 180px;
+
+
   }
 }
