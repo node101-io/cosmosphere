@@ -958,57 +958,6 @@
   font-size: 16px;
   font-weight: 400;
 }
-/*
-@media only screen and (max-width: 1200px) {
-  :root {
-  }
-}
-@media only screen and (max-width: 1100px) {
-
-}
-@media only screen and (max-width: 1000px) {
-  :root {
-  }
-}
-@media only screen and (max-width: 860px) {
-  :root {
-  }
-}
-@media only screen and (max-width: 800px) {
-  :root {
-
-  }
-}
-@media only screen and (max-width: 700px) {
-  :root {
-
-  }
-}
-@media only screen and (max-width: 670px) {
-  :root {
-
-  }
-}
-@media only screen and (max-width: 640px) {
-  :root {
-
-  }
-}
-@media only screen and (max-width: 600px) {
-  :root {
-
-  }
- 
-}  
-@media only screen and (max-width: 500px) {
-  :root {
-
-  }
-}
-@media only screen and (max-width: 400px) {
-  :root {
-  }
-}*/
 @media only screen and (max-width: 1400px) {
   :root {
     --page-one-title-letter-spacing: 22px;
@@ -1077,20 +1026,22 @@
     --page-three-schedule-left-wrapper-height: fit-content;
     --page-three-schedule-right-wrapper-height: fit-content;
     --page-three-speaker-width: 200px;
+
+    --page-three-location-slider-wrapper-height: 300px;
   }
   .page-three-schedule-wrapper {
     flex-wrap: wrap;
   }
   .page-three-speakers-grid-wrapper {
     grid-template-columns: repeat(12, 1fr);
-    width: calc(100vw - 4 * var(--page-horizontal-padding));
-    min-width: calc(100vw - 4 * var(--page-horizontal-padding));
+    width: calc(100vw - 3 * var(--page-horizontal-padding));
+    min-width: calc(100vw - 3 * var(--page-horizontal-padding));
     overflow-x: scroll;
   }
   .page-three-each-sponsors-list-wrapper {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    width: calc(100vw - 4 * var(--page-horizontal-padding));
+    width: calc(100vw - 3 * var(--page-horizontal-padding));
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -1165,6 +1116,8 @@
 
     --page-three-schedule-right-wrapper-width: 100%;
     --page-three-schedule-right-each-event-time-width: 100px;
+
+    --page-three-location-slider-wrapper-height: 250px;
   }
   
   .page-one-title-date {
@@ -1180,6 +1133,10 @@
   .page-two-left-each-subtitle {
     font-size: 16px;
   }
+  
+  .page-thee-each-slider-arrow {
+    opacity: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   :root {
@@ -1191,6 +1148,10 @@
     --page-three-schedule-right-each-event-gap: 20px;
     --page-three-schedule-right-events-wrapper-gap: 28px;
     --page-three-schedule-right-events-wrapper-padding: 20px;
+
+    --page-three-location-slider-wrapper-gap: 30px;
+    --page-three-location-slider-wrapper-height: 200px;
+
   }
 
   .page-one-background-image {
@@ -1213,7 +1174,8 @@
     backdrop-filter: blur(27.5px);  
   }
   .page-three-schedule-right-events-wrapper {
-    margin: 25px 10px;
+    margin-right: 10px;
+    padding: var(--page-three-schedule-right-events-wrapper-padding);
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1247,6 +1209,9 @@
     --page-two-right-earth-width: 300px;
 
     --page-three-schedule-right-each-event-time-width: 48px;
+
+    --page-three-location-slider-wrapper-gap: 20px;
+    --page-three-location-slider-wrapper-height: 180px;
   }
   
   .page-one-background-image {
