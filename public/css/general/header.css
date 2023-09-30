@@ -5,6 +5,7 @@
   --all-header-get-tickets-button-icon-wrapper-size: 36px;
   --all-header-get-tickets-button-icon-wrapper-margin: 15px;
   --all-header-get-tickets-button-icon-width: 12px;
+  --all-header-each-button-icon-size: 28px;
 }
 
 .all-wrapper {
@@ -65,6 +66,16 @@
 }
 .all-header-each-button:hover {
   color: var(--main-color);
+}
+.all-header-each-button-icon {
+  height: var(--all-header-each-button-icon-size);
+  min-height: var(--all-header-each-button-icon-size);
+  width: var(--all-header-each-button-icon-size);
+  min-width: var(--all-header-each-button-icon-size);
+  transition: all 0.2s ease-in-out;
+}
+.all-header-each-button-icon:hover {
+  transform: scale(1.1);
 }
 
 .all-header-get-tickets-button {
