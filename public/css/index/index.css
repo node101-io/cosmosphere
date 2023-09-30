@@ -4,6 +4,7 @@
   --page-one-get-tickets-button-margin-top: 40px;
   --page-one-logo-height: 20px;
   --page-one-supported-by-bottom-spacing: 50px;
+  --page-one-footer-supported-by-logo-width: 120px;
 
   --page-two-left-width: 500px;
   --page-two-left-subtitle-margin-bottom: 10px;
@@ -205,8 +206,10 @@
   margin-bottom: 15px;
 }
 .page-one-footer-supported-by-logo {
+  width: var(--page-one-footer-supported-by-logo-width);
+  min-width: var(--page-one-footer-supported-by-logo-width);
   height: auto;
-  width: auto;
+  min-height: auto;
 }
 .page-one-footer-supported-by-spacing {
   height: 30px;
@@ -589,6 +592,7 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--text-color-three);
+  line-height: 1.6;
 }
 .page-three-schedule-right-wrapper {
   display: flex;
