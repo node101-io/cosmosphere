@@ -3,5 +3,9 @@ window.addEventListener('load', () => {
     if (e.target.closest('.all-header-get-tickets-button')) {
       window.open('https://lu.ma/2gks8fp6', '_blank');
     };
+
+    if (e.target.closest('#header-menu-button')) {
+      // Toggle menu
+    };
   });
 });

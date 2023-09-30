@@ -26,12 +26,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* background-color: var(--background-color); */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--page-horizontal-padding);
-  z-index: 100;
+  z-index: 101;
   backdrop-filter: blur(20px);
 }
 
@@ -52,7 +51,7 @@
   width: fit-content;
   min-width: fit-content;
   position: absolute;
-  left: 50vw;
+  left: calc(50vw - var(--all-header-get-tickets-button-icon-wrapper-size));
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -145,3 +144,70 @@
   min-width: 100vw;
   background-color: var(--background-color);
 }
+
+@media only screen and (max-width: 1700px) {}
+
+@media only screen and (max-width: 1400px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1100px) {
+  .all-header-each-button {
+    margin: 0 calc(var(--all-header-button-gap) / 4);
+  }
+}
+
+@media only screen and (max-width: 1000px) {}
+
+@media only screen and (max-width: 900px) {
+  :root {
+    --all-header-get-tickets-button-icon-wrapper-size: 30px;
+    --all-header-logo-size: 45px;
+    --all-header-get-tickets-button-icon-wrapper-margin: 8px;
+  }
+
+  .all-header-each-button {
+    font-size: 17px;
+    margin: 0 calc(var(--all-header-button-gap) / 6);
+  }
+  .all-header-get-tickets-button:hover>.all-header-get-tickets-button-icon-wrapper {
+    width: 154%;
+    min-width: 154%;
+  }
+  .all-header-get-tickets-button-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --all-header-height: 70px;
+    --all-header-logo-size: 40px;
+  }
+
+  #header-menu-button {
+    display: flex !important;
+  }
+  #header-speakers-button, #header-schedule-button, #header-sponsors-button {
+    display: none;
+  }
+
+  .all-header-get-tickets-button {
+    display: none;
+  }
+
+  .all-header-button-wrapper {
+    transform: unset;
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 500px) {}
+
+@media only screen and (max-width: 400px) {}
+
+@media only screen and (max-width: 300px) {}
