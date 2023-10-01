@@ -123,8 +123,8 @@ const schedule = [
   },
   {
     time: '13:30 - 13:50',
-    title: 'Rebel Defi, TFM',
-    description: 'The Interchain Swiss Army Knife'
+    title: 'Zaki Manian, Sommelier',
+    description: 'Liquid Staking in Cosmos'
   },
   {
     time: '13:50 - 14:10',
@@ -158,8 +158,8 @@ const schedule = [
   },
   {
     time: '15:50 - 16:10',
-    title: 'Zaki Manian, Sommelier',
-    description: 'Liquid Staking in Cosmos'
+    title: 'Marko Baricevic, Binary Builders',
+    description: 'Cosmos SDK: Past, Present and Future!'
   },
   {
     time: '16:10 - 16:30',
@@ -173,8 +173,8 @@ const schedule = [
   },
   {
     time: '16:50 - 17:10',
-    title: 'Marko Baricevic, Binary Builders',
-    description: 'Cosmos SDK: Past, Present and Future!'
+    title: 'Rebel Defi, TFM',
+    description: 'The Interchain Swiss Army Knife'
   }
 ];
 
