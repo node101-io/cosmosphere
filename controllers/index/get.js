@@ -123,8 +123,8 @@ const schedule = [
   },
   {
     time: '13:30 - 13:50',
-    title: 'Marko Baricevic, Binary Builders',
-    description: 'Cosmos SDK: Past, Present and Future!'
+    title: 'Rebel Defi, TFM',
+    description: 'The Interchain Swiss Army Knife'
   },
   {
     time: '13:50 - 14:10',
@@ -173,8 +173,8 @@ const schedule = [
   },
   {
     time: '16:50 - 17:10',
-    title: 'Rebel Defi, TFM',
-    description: 'The Interchain Swiss Army Knife'
+    title: 'Marko Baricevic, Binary Builders',
+    description: 'Cosmos SDK: Past, Present and Future!'
   }
 ];
 
