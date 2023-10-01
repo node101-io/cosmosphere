@@ -1030,6 +1030,7 @@
     --page-three-speaker-width: 200px;
 
     --page-three-location-slider-wrapper-height: 300px;
+    --page-three-footer-wrapper-gap: 50px;
   }
   .page-three-schedule-wrapper {
     flex-wrap: wrap;
@@ -1060,6 +1061,22 @@
   }
   .page-three-each-sponsors-list-wrapper::-webkit-scrollbar {
     display: none;
+  }
+
+  .page-three-footer-middle-wrapper {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .page-three-footer-middle-right-wrapper {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .page-three-footer-top-title {
+    font-size: 26px;
+  }
+  .page-three-footer-bottom-each-text {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 1000px) {
