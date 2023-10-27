@@ -96,13 +96,13 @@ const speakers = [
     x: 'https://twitter.com/sunnya97',
   },
   {
-    name: '0xBrainjar',
-    title: 'Founder of Composable Finance',
-    image: '/img/speakers/0xbrainjar.png',
+    name: 'Jafar Azam',
+    title: 'Developer Relations at',
+    image: '/img/speakers/jafar.png',
     company_image: '/img/partners/companies/composable.png',
     company_image_width: '36%',
     linkedin: 'https://www.linkedin.com/company/composable-finance/',
-    x: 'https://twitter.com/0xbrainjar',
+    x: 'https://twitter.com/ComposableIntrn',
   },
   {
     name: 'Rebel Defi',
@@ -123,8 +123,8 @@ const schedule = [
   },
   {
     time: '13:30 - 13:50',
-    title: 'Zaki Manian, Sommelier',
-    description: 'Liquid Staking in Cosmos'
+    title: 'Marko Baricevic, Binary Builders',
+    description: 'Cosmos SDK: Past, Present and Future!'
   },
   {
     time: '13:50 - 14:10',
@@ -158,8 +158,8 @@ const schedule = [
   },
   {
     time: '15:50 - 16:10',
-    title: 'Marko Baricevic, Binary Builders',
-    description: 'Cosmos SDK: Past, Present and Future!'
+    title: 'Zaki Manian, Sommelier',
+    description: 'Liquid Staking in Cosmos'
   },
   {
     time: '16:10 - 16:30',
